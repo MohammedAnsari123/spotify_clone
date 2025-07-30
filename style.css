@@ -75,6 +75,7 @@ body {
 .right {
     width: 75vw;
     margin: 15px 0;
+    position: relative;
 }
 
 .header {
@@ -166,3 +167,30 @@ body {
     background-color: black;
     border-radius: 100%;
 }
+
+.playbar {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    bottom: 0;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.songbuttons * {
+    width: 40px;
+}
+
+
+
+
+
+
+
