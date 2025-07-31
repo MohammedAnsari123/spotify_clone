@@ -193,6 +193,10 @@ body {
     width: 30px;
 }
 
+.songbuttons img {
+    cursor: pointer;
+}
+
 .songList {
     height: 65vh;
     overflow: auto;
@@ -246,6 +250,7 @@ body {
     border-radius: 10px;
     position: absolute;
     top: 10px;
+    cursor: pointer;
 }
 
 .circle {
@@ -266,6 +271,12 @@ body {
     top: -6px;
 }
 
+.abovebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
 
 
 
@@ -275,3 +286,95 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .left {
+        padding-bottom: 0;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons * {
+        width: 100%;
+    }
+
+    .cardContainer {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .playbar {
+        width: 90vw;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .abovebar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .seekbar {
+        width: 100%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .songList ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .playnow {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+}
