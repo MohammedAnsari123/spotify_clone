@@ -3,7 +3,7 @@ let currentSong = new Audio();
 
 async function getSongs() {
     let a = await fetch("http://127.0.0.1:3000/songs/")
-    // let a = await fetch("songs")
+    // let a = await fetch("/songs/")
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response;
